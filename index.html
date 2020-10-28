@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #b8c6db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'poppins', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(351deg, #b8c6db 0%, #f4f7fa 74%);
+        }
+        .quiz-container{
+            background-color: #fff;
+            width: 600px;
+            max-width: 100%;
+            box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        h2{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .questions-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 20px;
+            grid-gap: 5px;
+        }
+        .grid-item{
+            background-color: #e7eef8;
+            padding: 10px 10px;
+        }
+        input, label{
+            cursor: pointer;
+        }
+        button{
+            width: 100%;
+            display: block;
+            background-color: #3e138d;
+            color: #fff;
+            padding: 20px;
+            font-size: 1.3rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #291352;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h2 class="question">Question text</h2>
+
+            <div class="questions-container">
+                <div class="grid-item ">
+
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label id="a_answer" for="a">question</label>
+                </div>
+
+                <div class="grid-item">
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label id="b_answer" for="b">question</label>
+                </div>
+
+                <div class="grid-item">
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label id="c_answer" for="c">question</label>
+                </div>
+
+                <div class="grid-item">
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label id="d_answer" for="d">question</label>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn">Submit</button>
+    </div>
+    
+</body>
+</html>
